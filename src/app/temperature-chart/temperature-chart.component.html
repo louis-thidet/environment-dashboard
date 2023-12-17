@@ -1,0 +1,35 @@
+<!-- Top Bar of the page-->
+<div class="top-bar">
+    <!-- Title of the page-->
+    <a> <h1>My Dashboard</h1> </a>
+
+    <!-- Reset Button-->
+    <div class="example-button-container">
+        <button (click)="reset()" mat-mini-fab color="warn" aria-label="Example icon button with a plus one icon">
+            <mat-icon>home</mat-icon>
+        </button>
+    </div>
+</div>
+
+<!-- Control Panel-->
+<div>
+    <!-- Buttons to display charts-->
+    <button (click)="loadTemperatureChart()" mat-raised-button color="primary">Temperature</button>
+    <button (click)="loadPressureChart()" mat-raised-button color="warn">Pressure</button>
+    <button (click)="loadHumidityChart()" mat-raised-button color="primary">Humidity</button>
+    <button (click)="loadIAQChart()" mat-raised-button color="accent">IAQ</button>
+
+    <!-- Date Picker to choose the date to check the observations-->
+    <mat-form-field class="light-padding">
+        <!--  <mat-label>Select a Date</mat-label>  -->
+        <input matInput [matDatepicker]="dp" (dateInput)="onDateChange()" [formControl]="selectedDate">
+        <mat-hint>DD/MM/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp></mat-datepicker>
+    </mat-form-field>
+</div>
+  
+<!-- Chart-->
+<div class="chart-container light-padding">
+    <canvas  id="MyChart" >{{ chart }}</canvas>
+</div>
