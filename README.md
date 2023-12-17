@@ -9,6 +9,10 @@ I called this program Environment Dashboard because I created it to display some
 - Angular Material
 - Chart.js
 
+# Favicon source
+
+https://www.flaticon.com/free-icon/line-chart_893216?term=line+chart&page=1&position=15&origin=tag&related_id=893216
+
 # Environmnent Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
