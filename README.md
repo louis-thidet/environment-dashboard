@@ -4,6 +4,11 @@ This program works with a component acting as a single page (TemperatureChartCom
 
 I called this program Environment Dashboard because I created it to display some enviromnent observations with my MangOH Yellow (Temperature, pressure, humidity and IAQ);
 
+# Libraries used
+
+- Angular Material
+- Chart.js
+
 # Environmnent Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.

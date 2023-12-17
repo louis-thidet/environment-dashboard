@@ -1,1 +1,0 @@
-This program works with a component acting as a single page (TemperatureChartComponent) and a service (EnvironmentService). It displays data gathered from Sierra Octave's REST API. To use it, you have to put the proper IDs in the environment.service.ts file (Stream ID, authentification token and username).
